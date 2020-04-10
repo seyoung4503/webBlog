@@ -4,7 +4,7 @@ Back To The Summit
 Blog project
 ------------
 
-# Blog pages address
+## Blog pages address
 Home : [Go to Blog page][blogHome]
 
 Updated History : [Go to Blog Updated History][updateHistory]
