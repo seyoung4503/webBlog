@@ -5,9 +5,9 @@ Blog project
 ------------
 
 ## Blog pages address
-Home : [Go to Blog page][blogHome]
+>Home : [Go to Blog page][blogHome]
 
-Updated History : [Go to Blog Updated History][updateHistory]
+>Updated History : [Go to Blog Updated History][updateHistory]
 
 [blogHome]: https://seyoung4503.github.io/webBlog/blogHome "Hello Home"
 [updateHistory]: https://seyoung4503.github.io/webBlog/updateHistory "Updated History"
