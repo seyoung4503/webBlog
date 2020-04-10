@@ -1,10 +1,11 @@
 Back To The Summit 
 ==================
+
 Blog project
 ------------------
 
 # Blog pages address
-Home : [Go to Blog page][blogHome]
+Home : [Go to Blog page][blogHome] \n
 Updated History : [Go to Blog Updated History][updateHistory]
 
 [blogHome]: https://seyoung4503.github.io/webBlog/blogHome "Hello Home"
