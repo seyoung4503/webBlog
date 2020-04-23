@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+  <title>/Home/note/Logic_Circuit/LCAndOrNotGate</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    table{border-collapse:collapse; text-align: center;}
+    th,td{border: 1px solid black; width:100px; height:20px}
+  </style>
+</head>
+<body>
+  <h1><a href="blogHome.html">Back to the Summit</a></h1>
+  <h2><a href="Logic_Circuit.html">Logic Circuit</a></h2>
+  <ol>
+    <li><a href="LCAndOrNotGate.html">AND, OR, NOT Gate</a></li>
+  </ol>
+  <p>
+    Basically, computers work at binary environment, that means the computers can interact with 0 or 1 signal. Generally 0 signal is equal to off, and 1 signal is equal to on.
+    <br><br>
+    Obviously our world uses decimal, so we can't intuitively accept computers signal.
+    <br><br>
+    If we provide decimal number data at hardware level and let the computer do the job, it might be take quite a while.
+    <br><br>
+    Because the computer should convert decimal number to binary number and compute it.
+    <br><br>
+    And that's why we need operator which operate binary numbers.
+    <br><br>
+    But before we deal with operators, we should know how to describe negative numbers in binary environment.
+    <br><br>
+    <h2>2's complement</h2>
+    At first, we should describe 5 to binary number. It is just 00000101.
+    Second, we want to calculate 5 - 5.
+    <br>
+    It is simply equal to 0. And also we can write binary calculation like this.
+    <pre>
+        00000101
+      - 00000101
+      = 00000000
+    </pre>
+    Isn't it simple?
+    <br>
+    By the way, we want to express this calculation without subtraction like 5 + -(5).
+    <br>
+    5 + x = 0
+    <br><br>
+    If we can find number x, it would be -5. And x is equal to 11111011.
+    <br><br>
+    <pre>
+        00000101
+      + 11111011
+      = 00000000
+    </pre>
+    We can easily get negative numbers using the previous expression.
+    <br><br>
+    And the previous progress has the rules to convert pos to neg.
+    First, both 0 and 1 need to swap each others. And you should plus 1 to that number.
+    <br>
+    That is how to convert pos to neg number and it called 2's complement law.
+    <br><br>
+
+    <h2>Basic binary operations</h2>
+    <h3>AND operator</h3>
+    <img src="C:\Users\세영\Desktop\web\blog\andGate.jpg" alt="andGate" width="200px">
+    <table>
+      <tr>
+        <td>x</td>
+        <td>y</td>
+        <td>z = x &middot y</td>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+    </table>
+    <h3>OR operator</h3>
+    <img src="C:\Users\세영\Desktop\web\blog\orGate.jpg" alt="orGate" width="200px">
+    <table>
+      <tr>
+        <td>x</td>
+        <td>y</td>
+        <td>z = x + y</td>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      </table>
+      <h3>NOT operator</h3>
+      <img src="C:\Users\세영\Desktop\web\blog\notGate.jpg" alt="notGate" width="200px">
+      <table>
+        <tr>
+          <td>x</td>
+          <td>z = x'</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+      </table>
+      As you can see, AND operation always has a result value of 1 when all signals inputted are 1.
+      <br>
+      And OR operation always gives 0 signal when input signals are all 0.
+      <br>
+      Obviously, NOT operation gives the signal opposite to input.
+  </p>
+  <p>
+    Last Updated : 2020-04-23
+  </p>
+</body>
+</html>
